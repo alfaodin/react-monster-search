@@ -1,3 +1,6 @@
+# react-monster-search
+Little project to start with ReactJs
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
