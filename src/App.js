@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 import { SearchBox } from './components/search-box/search-box'
 import { CardList } from "./components/card-list/card-list-component";
+
+import { TweenMax, Power3 } from 'gsap';
 
 import './App.css';
 
@@ -31,8 +33,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        <h1>Monster Rolodex</h1>
-        <SearchBox placeholder='Search monster' handleChange={this.onSearchInputChanged}></SearchBox>
+        <div className="header-container">
+          <h1>Monster Rolodex</h1>
+          <SearchBox placeholder='Search monster' handleChange={this.onSearchInputChanged}></SearchBox>
+        </div>
         <CardList monsters={filteredMonsters}>
         </CardList>
       </div >

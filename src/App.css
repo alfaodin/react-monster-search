@@ -2,23 +2,17 @@
   text-align: center;
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 21%, rgba(0, 212, 255, 1) 100%, rgba(0, 116, 255, 1) 100%);
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
   font-family: 'Bigelow Rules', cursive;
-  font-size: 72px;
+  font-size: 32px;
   color: #0ccac4;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -34,22 +28,4 @@ h1 {
 
 .App-link {
   color: #61dafb;
-}
-
-.monster-container {
-  display: flex;
-  grid-gap: 3ch;
-  gap: 3ch;
-  align-items: baseline;
-
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
 }
